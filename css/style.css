@@ -233,17 +233,20 @@ footer {
     /* Apila los elementos en columna */
     align-items: center;
   }
+  .nextRace .contenedor #pista {
+    width: 100% !important;
+  }
+  .nextRace .contenedor table {
+    width: 100%;
+    /* Asegura que la tabla ocupe todo el ancho */
+    font-size: 15px;
+    /* Ajusta el tamaño del texto de la tabla */
+  }
   .nextRace .tiempo {
     font-size: 18px;
     /* Reduce un poco el tamaño de fuente */
     width: 80px;
     /* Ajusta el ancho */
-  }
-  .nextRace table {
-    width: 100%;
-    /* Asegura que la tabla ocupe todo el ancho */
-    font-size: 15px;
-    /* Ajusta el tamaño del texto de la tabla */
   }
   .nextRace #contador {
     gap: 15px;
