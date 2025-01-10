@@ -13,11 +13,16 @@ main {
             display: flex;
             flex-direction: row;
             justify-content: center;
+            align-items: center;
             color: white;
 
             #bandera {
-                width: 20px;
-                padding-right: 10px;
+                width: 10%;
+                border-radius: .5rem;
+            }
+
+            h4 {
+                padding-left: 1rem;
             }
         }
 
