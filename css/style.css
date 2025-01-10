@@ -223,6 +223,11 @@ footer {
 }
 
 @media (max-width: 600px) {
+  nav ul {
+    text-align: center;
+    display: none;
+    /* Hide nav list initially */
+  }
   .nextRace .contenedor {
     flex-direction: column;
     /* Apila los elementos en columna */
@@ -337,7 +342,7 @@ footer {
     border-left: 0.75rem solid rgb(0, 0, 0) !important;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
   nav ul {
     text-align: center;
     display: none;
