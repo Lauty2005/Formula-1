@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página base</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1>Mi página web</h1>
+            <nav>
+                <button id="menuToggle">☰</button>
+                <ul id="navList">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+
+            </nav>
+        </section>
+    </header>
+    <main>
+
+        <section class="nextRace">
+            <div class="title">
+                <img src="./img/Bahrein.svg" id="bandera">
+                <h4>26-28 February</h4>
+            </div>
+            <div class="contenedor">
+                <img src="./img/Sakhir.avif" id="pista">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">
+                                <h6>Day</h6>
+                            </th>
+                            <th scope="col">
+                                <h6>Practice</h6>
+                            </th>
+                            <th scope="col">
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">Wednesday</th>
+                            <td>26 February</td>
+                            <td>Day 1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Thursday</th>
+                            <td>27 February</td>
+                            <td>Day 2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Friday</th>
+                            <td>28 February</td>
+                            <td>Day 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="contador">
+                <div class="tiempo" id="dias">-</div>
+                <div class="tiempo" id="horas">-</div>
+                <div class="tiempo" id="minutos">-</div>
+                <div class="tiempo" id="segundos">-</div>
+            </div>
+        </section>
+        <section>
+            <article class="information">
+                <h1>F1 Teams 2025</h1>
+                <p>La temporada 2025 de la Fórmula 1 presenta cambios significativos en las alineaciones de las
+                    escuderías y
+                    en el calendario de competencias. A continuación, se detallan las principales novedades:</p>
+            </article>
+
+            <div class="teams">
+                <div class="div1">
+                    <div class="titleTeams mclaren">
+                        <h3>McLaren</h3>
+                        <img src="./img/McLaren Logo.avif" id="teamsLogo" alt="">
+                    </div>
+                    <hr class="custom-line">
+                    <div class="pilotsContainer">
+                        <div class="pilots">
+                            <h4>4</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Lando</h4>
+                                <h4 id="lastName">NORRIS</h4>
+                            </div>
+                        </div>
+                        <div class="pilots">
+                            <h4>81</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Oscar</h4>
+                                <h4 id="lastName">PIASTRI</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./img/McLaren.png" id="monoplaza" width="75%">
+                </div>
+                <div class="div1">
+                    <div class="titleTeams ferrari">
+                        <h3>Ferrari</h3>
+                        <img src="./img/Ferrari Logo.avif" id="teamsLogo" alt="">
+                    </div>
+                    <hr class="custom-line">
+                    <div class="pilotsContainer">
+                        <div class="pilots">
+                            <h4>44</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Lewis</h4>
+                                <h4 id="lastName">HAMILTON</h4>
+                            </div>
+                        </div>
+                        <div class="pilots">
+                            <h4>16</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Charles</h4>
+                                <h4 id="lastName">LECLERC</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./img/Ferrari.png" id="monoplaza" width="75%">
+                </div>
+            </div>
+            <div class="teams">
+                <div class="div1">
+                    <div class="titleTeams redbull">
+                        <h3>Red Bull</h3>
+                        <img src="./img/Red Bull Logo.avif" id="teamsLogo" alt="">
+                    </div>
+                    <hr class="custom-line">
+                    <div class="pilotsContainer">
+                        <div class="pilots">
+                            <h4>1</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Max</h4>
+                                <h4 id="lastName">VERSTAPPEN</h4>
+                            </div>
+                        </div>
+                        <div class="pilots">
+                            <h4>30</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Liam</h4>
+                                <h4 id="lastName">LAWSON</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./img/Red Bull.png" id="monoplaza" width="75%">
+                </div>
+                <div class="div1">
+                    <div class="titleTeams mercedes">
+                        <h3>Mercedes</h3>
+                        <img src="./img/Mercedes Logo.avif" id="teamsLogo" alt="">
+                    </div>
+                    <hr class="custom-line">
+                    <div class="pilotsContainer">
+                        <div class="pilots">
+                            <h4>63</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">George</h4>
+                                <h4 id="lastName">RUSSELL</h4>
+                            </div>
+                        </div>
+                        <div class="pilots">
+                            <h4>12</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Andrea Kimi</h4>
+                                <h4 id="lastName">ANTONELLI</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./img/Mercedes.avif" id="monoplaza" width="75%">
+                </div>
+            </div>
+            <div class="teams">
+                <div class="div1">
+                    <div class="titleTeams astonmartin">
+                        <h3>Aston Martin</h3>
+                        <img src="./img/Aston Martin Logo.avif" id="teamsLogo" alt="">
+                    </div>
+                    <hr class="custom-line">
+                    <div class="pilotsContainer">
+                        <div class="pilots">
+                            <h4>14</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Fernando</h4>
+                                <h4 id="lastName">ALONSO</h4>
+                            </div>
+                        </div>
+                        <div class="pilots">
+                            <h4>18</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Lance</h4>
+                                <h4 id="lastName">STROLL</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./img/Aston Martin.png" id="monoplaza" width="75%">
+                </div>
+                <div class="div1">
+                    <div class="titleTeams alpine">
+                        <h3>Alpine</h3>
+                        <img src="./img/Alpine Logo.avif" id="teamsLogo" alt="">
+                    </div>
+                    <hr class="custom-line">
+                    <div class="pilotsContainer">
+                        <div class="pilots">
+                            <h4>10</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Pierre</h4>
+                                <h4 id="lastName">GASLY</h4>
+                            </div>
+                        </div>
+                        <div class="pilots">
+                            <h4>7</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Jack</h4>
+                                <h4 id="lastName">DOOHAN</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./img/Alpine.avif" id="monoplaza" width="75%">
+                </div>
+            </div>
+            <div class="teams">
+                <div class="div1">
+                    <div class="titleTeams haas">
+                        <h3>Haas</h3>
+                        <img src="./img/Haas Logo.avif" id="teamsLogo" alt="">
+                    </div>
+                    <hr class="custom-line">
+                    <div class="pilotsContainer">
+                        <div class="pilots">
+                            <h4>31</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Esteban</h4>
+                                <h4 id="lastName">OCON</h4>
+                            </div>
+                        </div>
+                        <div class="pilots">
+                            <h4>87</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Oliver</h4>
+                                <h4 id="lastName">Bearman</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./img/Haas.png" id="monoplaza" width="75%">
+                </div>
+                <div class="div1">
+                    <div class="titleTeams rb">
+                        <h3>RB</h3>
+                        <img src="./img/RB Logo.avif" id="teamsLogo" alt="">
+                    </div>
+                    <hr class="custom-line">
+                    <div class="pilotsContainer">
+                        <div class="pilots">
+                            <h4>22</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Yuki</h4>
+                                <h4 id="lastName">TSUNODA</h4>
+                            </div>
+                        </div>
+                        <div class="pilots">
+                            <h4>6</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Isack</h4>
+                                <h4 id="lastName">HADJAR</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./img/RB.png" id="monoplaza" width="75%">
+                </div>
+            </div>
+            <div class="teams">
+                <div class="div1">
+                    <div class="titleTeams williams">
+                        <h3>Williams</h3>
+                        <img src="./img/Williams Logo.avif" id="teamsLogo" alt="">
+                    </div>
+                    <hr class="custom-line">
+                    <div class="pilotsContainer">
+                        <div class="pilots">
+                            <h4>55</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Carlos</h4>
+                                <h4 id="lastName">SAINZ</h4>
+                            </div>
+                        </div>
+                        <div class="pilots">
+                            <h4>23</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Alex</h4>
+                                <h4 id="lastName">ALBON</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./img/Williams.png" id="monoplaza" width="75%">
+                </div>
+                <div class="div1">
+                    <div class="titleTeams kicksauber">
+                        <h3>Kick Sauber</h3>
+                        <img src="./img/Kick Sauber Logo.avif" id="teamsLogo" alt="">
+                    </div>
+                    <hr class="custom-line">
+                    <div class="pilotsContainer">
+                        <div class="pilots">
+                            <h4>27</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Nico</h4>
+                                <h4 id="lastName">HULKENBERG</h4>
+                            </div>
+                        </div>
+                        <div class="pilots">
+                            <h4>5</h4>
+                            <div class="nameContainer">
+                                <h4 id="name">Gabriel</h4>
+                                <h4 id="lastName">BORTOLETO</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./img/Kick Sauber.png" id="monoplaza" width="75%">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi nombre</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

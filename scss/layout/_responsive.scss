@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+
+  nav ul {
+    text-align: center;
+    display: none; /* Hide nav list initially */
+  }
+
+}
+
+@media (min-width: 769px) {
+  #menuToggle {
+    display: none; /* Hide menu toggle on desktops */
+  }
+}

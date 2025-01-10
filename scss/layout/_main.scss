@@ -1,0 +1,200 @@
+main {
+
+    .carousel-inner>.item>img,
+    .carousel-inner>.item>a>img {
+        width: 75%;
+        margin: auto;
+    }
+
+    .nextRace {
+        background-color: rgb(21 21 30);
+
+        .title {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: white;
+
+            #bandera {
+                width: 20px;
+                padding-right: 10px;
+            }
+        }
+
+        .contenedor {
+            display: flex;
+
+            #pista {
+                width: 50%;
+            }
+
+            table {
+                color: white;
+                width: 50%;
+                margin-right: 1rem;
+            }
+        }
+
+        #contador {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .tiempo {
+            padding: 10px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            font-size: 24px;
+            width: 100px;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+    }
+
+    section {
+        .information {
+            display: flex;
+            /* Activa flexbox */
+            flex-direction: column;
+            /* Organiza los elementos en columna */
+            justify-content: center;
+            /* Centra verticalmente */
+            align-items: center;
+            /* Centra horizontalmente */
+            width: 90%;
+            /* Ajusta el ancho como ya está configurado */
+            margin: 0 auto;
+            /* Centra el contenedor dentro de su padre */
+
+            h1 {
+                font-weight: bold;
+                border-top: .75rem solid black;
+                border-right: .75rem solid black;
+                border-top-right-radius: 1rem;
+                width: 100%;
+            }
+
+        }
+
+        .teams {
+            display: flex;
+
+            .div1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 50%;
+                margin: 1rem;
+                border: 0.15rem solid black;
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                border-top-right-radius: 1rem;
+
+                .titleTeams {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    h3 {
+                        margin: 0 !important;
+                        padding-left: 1rem;
+                    }
+                }
+
+                .pilotsContainer {
+                    display: flex;
+                    width: 95%;
+
+                    .pilots {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        width: 100%;
+
+                        border-bottom: 1px solid rgb(185 185 188);
+                        border-right: 1px solid rgb(185 185 188);
+                        border-bottom-right-radius: 1em;
+
+                        .nameContainer {
+
+                            #name {
+                                margin: 0;
+                                font-size: 1.25rem;
+
+                            }
+
+                            #lastName {
+                                margin: 0;
+                                font-size: 2rem;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+
+                .custom-line {
+                    border: none;
+                    /* Elimina el estilo predeterminado de <hr> */
+                    border-top: 1px solid rgb(185 185 188);
+                    /* Línea superior gris clara */
+                    height: 1px;
+                    /* Grosor de la línea */
+                    background-color: transparent;
+                    /* Fondo transparente */
+                    margin: 1rem 0;
+                    /* Espaciado superior e inferior */
+                    width: 90%;
+                    /* Ajusta al contenedor */
+                }
+
+
+                .mclaren {
+                    border-left: 0.75rem solid rgb(255, 128, 0) !important;
+                }
+
+                .ferrari {
+                    border-left: 0.75rem solid rgb(232, 0, 32) !important;
+                }
+
+                .redbull {
+                    border-left: 0.75rem solid rgb(54, 113, 198) !important;
+                }
+
+                .mercedes {
+                    border-left: 0.75rem solid rgb(39, 244, 210) !important;
+                }
+
+                .astonmartin {
+                    border-left: 0.75rem solid rgb(34, 153, 113) !important;
+                }
+
+                .alpine {
+                    border-left: 0.75rem solid rgb(0, 147, 204) !important;
+                }
+
+                .haas {
+                    border-left: 0.75rem solid rgb(182, 186, 189) !important;
+                }
+
+                .rb {
+                    border-left: 0.75rem solid rgb(102, 146, 255) !important;
+                }
+
+                .williams {
+                    border-left: 0.75rem solid rgb(100, 196, 255) !important;
+                }
+
+                .kicksauber {
+                    border-left: 0.75rem solid rgb(0, 0, 0) !important;
+                }
+            }
+        }
+
+        #teamsLogo {
+            height: 4em;
+            padding: 1rem 1rem;
+        }
+    }
+}
