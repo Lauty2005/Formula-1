@@ -1,22 +1,27 @@
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .nextRace .contenedor {
     flex-direction: column;
-    align-items: center;
     /* Apila los elementos en columna */
+    align-items: center;
   }
 
   .nextRace .tiempo {
-    font-size: 16px;
-    /* Reduce aún más el tamaño de fuente */
-    width: 70px;
-    /* Reduce el ancho */
+    font-size: 18px;
+    /* Reduce un poco el tamaño de fuente */
+    width: 80px;
+    /* Ajusta el ancho */
   }
 
   .nextRace table {
     width: 100%;
     /* Asegura que la tabla ocupe todo el ancho */
-    font-size: 14px;
+    font-size: 15px;
     /* Ajusta el tamaño del texto de la tabla */
+  }
+
+  .nextRace #contador {
+    gap: 15px;
+    /* Reduce ligeramente el espacio entre contadores */
   }
 
   .teams {
