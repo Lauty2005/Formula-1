@@ -43,15 +43,7 @@
     align-items: center;
 
     .div1 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 50%;
-      margin: 1rem;
-      border: 0.15rem solid black;
-      border-bottom-left-radius: 1rem;
-      border-bottom-right-radius: 1rem;
-      border-top-right-radius: 1rem;
+      width: 90% !important;
 
       .titleTeams {
         display: flex;
@@ -111,6 +103,9 @@
         /* Ajusta al contenedor */
       }
 
+      #monoplaza {
+        width: 90%;
+      }
 
       .mclaren {
         border-left: 0.75rem solid rgb(255, 128, 0) !important;

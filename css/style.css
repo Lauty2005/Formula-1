@@ -258,15 +258,7 @@ footer {
     align-items: center;
   }
   .teams .div1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    margin: 1rem;
-    border: 0.15rem solid black;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    border-top-right-radius: 1rem;
+    width: 90% !important;
   }
   .teams .div1 .titleTeams {
     display: flex;
@@ -313,6 +305,9 @@ footer {
     /* Espaciado superior e inferior */
     width: 90%;
     /* Ajusta al contenedor */
+  }
+  .teams .div1 #monoplaza {
+    width: 90%;
   }
   .teams .div1 .mclaren {
     border-left: 0.75rem solid rgb(255, 128, 0) !important;
