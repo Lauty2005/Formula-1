@@ -218,11 +218,91 @@ main .container #teamsLogo {
   height: 4em;
   padding: 1rem 1rem;
 }
+main .race .teams .div2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  width: 90%;
+  border: 0.25rem solid black;
+  border-radius: 1rem;
+}
+main .race .teams .div2 .titleRace {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+}
+main .race .teams .div2 .titleRace .date {
+  display: flex;
+  flex-direction: column;
+}
+main .race .teams .div2 .titleRace .date h3 {
+  margin: 0;
+  font-weight: bold;
+}
+main .race .teams .div2 .titleRace .date #dates {
+  font-size: 28px;
+}
+main .race .teams .div2 .titleRace .date #month {
+  color: white;
+  background-color: black;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 18px;
+}
+main .race .teams .div2 .titleRace #flag {
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+}
+main .race .teams .div2 .custom-line {
+  border: none;
+  /* Elimina el estilo predeterminado de <hr> */
+  border-top: 1px solid rgb(185, 185, 188);
+  /* Línea superior gris clara */
+  height: 1px;
+  /* Grosor de la línea */
+  background-color: transparent;
+  /* Fondo transparente */
+  margin: 1rem 0;
+  /* Espaciado superior e inferior */
+  width: 90%;
+  /* Ajusta al contenedor */
+}
+main .race .teams .div2 a {
+  text-decoration: none;
+  color: black;
+}
+main .race .teams .div2 a .raceContainer {
+  width: 90%;
+}
+main .race .teams .div2 a .raceContainer h3 {
+  font-weight: bold;
+}
+main .race .teams .div2 #circuit {
+  width: 50%;
+}
 
 .race .teams .div2:hover {
-  border-color: #ff0000; /* Cambia el color del borde */
-  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-  cursor: pointer; /* Cambia el cursor a una mano */
+  border-color: #ff0000;
+  /* Cambia el color del borde */
+  transform: scale(1.05);
+  /* Aumenta ligeramente el tamaño */
+  cursor: pointer;
+  /* Cambia el cursor a una mano */
+}
+
+.race .teams .div2 .raceContainer:hover {
+  color: grey;
+  /* Cambia el color del borde */
+  transform: translateY(-5px);
+  /* Mueve el título hacia arriba */
+  cursor: pointer;
+  /* Cambia el cursor a una mano */
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Transición suave */
 }
 
 footer {
@@ -353,68 +433,6 @@ footer {
   .teams .div1 .kicksauber {
     border-left: 0.75rem solid rgb(0, 0, 0) !important;
   }
-  .race .teams .div2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
-    width: 90%;
-    border: 0.25rem solid black;
-    border-radius: 1rem;
-  }
-  .race .teams .div2 .titleRace {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0 1rem 0;
-  }
-  .race .teams .div2 .titleRace .date {
-    display: flex;
-    flex-direction: column;
-  }
-  .race .teams .div2 .titleRace .date h3 {
-    margin: 0;
-    font-weight: bold;
-  }
-  .race .teams .div2 .titleRace .date #dates {
-    font-size: 28px;
-  }
-  .race .teams .div2 .titleRace .date #month {
-    color: white;
-    background-color: black;
-    border-radius: 1rem;
-    text-align: center;
-    font-size: 18px;
-  }
-  .race .teams .div2 .titleRace #flag {
-    height: 4rem;
-    border-radius: 0.5rem;
-    border: 1px solid black;
-  }
-  .race .teams .div2 .custom-line {
-    border: none;
-    /* Elimina el estilo predeterminado de <hr> */
-    border-top: 1px solid rgb(185, 185, 188);
-    /* Línea superior gris clara */
-    height: 1px;
-    /* Grosor de la línea */
-    background-color: transparent;
-    /* Fondo transparente */
-    margin: 1rem 0;
-    /* Espaciado superior e inferior */
-    width: 90%;
-    /* Ajusta al contenedor */
-  }
-  .race .teams .div2 .raceContainer {
-    width: 90%;
-  }
-  .race .teams .div2 .raceContainer h3 {
-    font-weight: bold;
-  }
-  .race .teams .div2 #circuit {
-    width: 50%;
-  }
 }
 @media (min-width: 600px) and (max-width: 768px) {
   nav ul {
@@ -432,71 +450,16 @@ footer {
     justify-content: center;
   }
   main .race .teams .div2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 30%;
-    margin: 1rem;
-    border: 0.25rem solid black;
-    border-radius: 1rem;
-  }
-  main .race .teams .div2 .titleRace {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0 1rem 0;
-  }
-  main .race .teams .div2 .titleRace .date h3 {
-    margin: 0;
-    font-weight: bold;
-  }
-  main .race .teams .div2 .titleRace .date #dates {
-    font-size: 28px;
-  }
-  main .race .teams .div2 .titleRace .date #month {
-    color: white;
-    background-color: black;
-    border-radius: 1rem;
-    text-align: center;
-    font-size: 18px;
-  }
-  main .race .teams .div2 .titleRace .date #month-spain {
-    color: white;
-    background-color: black;
-    border-radius: 1rem;
-    text-align: center;
-    font-size: 14px;
-    padding: 0.25rem;
   }
   main .race .teams .div2 .titleRace #flag {
     height: 3rem;
-    border-radius: 0.5rem;
-    border: 1px solid black;
-  }
-  main .race .teams .div2 .custom-line {
-    border: none;
-    /* Elimina el estilo predeterminado de <hr> */
-    border-top: 1px solid rgb(185, 185, 188);
-    /* Línea superior gris clara */
-    height: 1px;
-    /* Grosor de la línea */
-    background-color: transparent;
-    /* Fondo transparente */
-    margin: 1rem 0;
-    /* Espaciado superior e inferior */
-    width: 90%;
-    /* Ajusta al contenedor */
   }
   main .race .teams .div2 .raceContainer {
-    width: 90%;
     height: 50%;
   }
   main .race .teams .div2 .raceContainer h3 {
     font-weight: bold;
-  }
-  main .race .teams .div2 #circuit {
-    width: 50%;
   }
 }
 @media (min-width: 769px) {
@@ -526,64 +489,12 @@ footer {
     justify-content: center;
   }
   main .race .teams .div2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 20%;
-    margin: 1rem;
-    border: 0.25rem solid black;
-    border-radius: 1rem;
-  }
-  main .race .teams .div2 .titleRace {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0 1rem 0;
-  }
-  main .race .teams .div2 .titleRace .date h3 {
-    margin: 0;
-    font-weight: bold;
-  }
-  main .race .teams .div2 .titleRace .date #dates {
-    font-size: 28px;
-  }
-  main .race .teams .div2 .titleRace .date #month {
-    color: white;
-    background-color: black;
-    border-radius: 1rem;
-    text-align: center;
-    font-size: 18px;
-  }
-  main .race .teams .div2 .titleRace .date #month-spain {
-    color: white;
-    background-color: black;
-    border-radius: 1rem;
-    text-align: center;
-    font-size: 14px;
-    padding: 0.25rem;
   }
   main .race .teams .div2 .titleRace #flag {
     height: 3rem;
-    border-radius: 0.5rem;
-    border: 1px solid black;
-  }
-  main .race .teams .div2 .custom-line {
-    border: none;
-    /* Elimina el estilo predeterminado de <hr> */
-    border-top: 1px solid rgb(185, 185, 188);
-    /* Línea superior gris clara */
-    height: 1px;
-    /* Grosor de la línea */
-    background-color: transparent;
-    /* Fondo transparente */
-    margin: 1rem 0;
-    /* Espaciado superior e inferior */
-    width: 90%;
-    /* Ajusta al contenedor */
   }
   main .race .teams .div2 .raceContainer {
-    width: 90%;
     height: 50%;
   }
   main .race .teams .div2 .raceContainer h3 {

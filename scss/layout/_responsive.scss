@@ -152,83 +152,6 @@
       }
     }
   }
-
-  .race {
-    .teams {
-      .div2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 1rem;
-        width: 90%;
-        border: 0.25rem solid black;
-        border-radius: 1rem;
-
-        .titleRace {
-          width: 90%;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 1rem 0 1rem 0;
-
-          .date {
-            display: flex;
-            flex-direction: column;
-
-            h3 {
-              margin: 0;
-              font-weight: bold;
-            }
-
-            #dates {
-              font-size: 28px;
-            }
-
-            #month {
-              color: white;
-              background-color: black;
-              border-radius: 1rem;
-              text-align: center;
-              font-size: 18px;
-            }
-          }
-
-          #flag {
-            height: 4rem;
-            border-radius: .5rem;
-            border: 1px solid black;
-          }
-        }
-
-        .custom-line {
-          border: none;
-          /* Elimina el estilo predeterminado de <hr> */
-          border-top: 1px solid rgb(185 185 188);
-          /* Línea superior gris clara */
-          height: 1px;
-          /* Grosor de la línea */
-          background-color: transparent;
-          /* Fondo transparente */
-          margin: 1rem 0;
-          /* Espaciado superior e inferior */
-          width: 90%;
-          /* Ajusta al contenedor */
-        }
-
-        .raceContainer {
-          width: 90%;
-
-          h3 {
-            font-weight: bold;
-          }
-        }
-
-        #circuit {
-          width: 50%;
-        }
-      }
-    }
-  }
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
@@ -255,82 +178,20 @@
         justify-content: center;
 
         .div2 {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
           width: 30%;
-          margin: 1rem;
-          border: 0.25rem solid black;
-          border-radius: 1rem;
 
           .titleRace {
-            width: 90%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0 1rem 0;
-
-            .date {
-              h3 {
-                margin: 0;
-                font-weight: bold;
-              }
-
-              #dates {
-                font-size: 28px;
-              }
-
-              #month {
-                color: white;
-                background-color: black;
-                border-radius: 1rem;
-                text-align: center;
-                font-size: 18px;
-              }
-
-              #month-spain {
-                color: white;
-                background-color: black;
-                border-radius: 1rem;
-                text-align: center;
-                font-size: 14px;
-                padding: .25rem;
-              }
-            }
-
             #flag {
               height: 3rem;
-              border-radius: .5rem;
-              border: 1px solid black;
             }
-          }
-
-          .custom-line {
-            border: none;
-            /* Elimina el estilo predeterminado de <hr> */
-            border-top: 1px solid rgb(185 185 188);
-            /* Línea superior gris clara */
-            height: 1px;
-            /* Grosor de la línea */
-            background-color: transparent;
-            /* Fondo transparente */
-            margin: 1rem 0;
-            /* Espaciado superior e inferior */
-            width: 90%;
-            /* Ajusta al contenedor */
           }
 
           .raceContainer {
-            width: 90%;
             height: 50%;
 
             h3 {
               font-weight: bold;
             }
-          }
-
-          #circuit {
-            width: 50%;
           }
         }
       }
@@ -375,74 +236,17 @@
         flex-wrap: wrap;
         justify-content: center;
 
+
         .div2 {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
           width: 20%;
-          margin: 1rem;
-          border: 0.25rem solid black;
-          border-radius: 1rem;
 
           .titleRace {
-            width: 90%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0 1rem 0;
-
-            .date {
-              h3 {
-                margin: 0;
-                font-weight: bold;
-              }
-
-              #dates {
-                font-size: 28px;
-              }
-
-              #month {
-                color: white;
-                background-color: black;
-                border-radius: 1rem;
-                text-align: center;
-                font-size: 18px;
-              }
-
-              #month-spain {
-                color: white;
-                background-color: black;
-                border-radius: 1rem;
-                text-align: center;
-                font-size: 14px;
-                padding: .25rem;
-              }
-            }
-
             #flag {
               height: 3rem;
-              border-radius: .5rem;
-              border: 1px solid black;
             }
-          }
-
-          .custom-line {
-            border: none;
-            /* Elimina el estilo predeterminado de <hr> */
-            border-top: 1px solid rgb(185 185 188);
-            /* Línea superior gris clara */
-            height: 1px;
-            /* Grosor de la línea */
-            background-color: transparent;
-            /* Fondo transparente */
-            margin: 1rem 0;
-            /* Espaciado superior e inferior */
-            width: 90%;
-            /* Ajusta al contenedor */
           }
 
           .raceContainer {
-            width: 90%;
             height: 50%;
 
             h3 {
