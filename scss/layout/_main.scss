@@ -17,7 +17,7 @@ main {
             color: white;
 
             #bandera {
-                width: 10%;
+                width: 5%;
                 border-radius: .5rem;
             }
 
@@ -57,7 +57,7 @@ main {
         }
     }
 
-    section {
+    .container {
         .information {
             display: flex;
             /* Activa flexbox */
@@ -204,4 +204,10 @@ main {
             padding: 1rem 1rem;
         }
     }
+}
+
+.race .teams .div2:hover {
+    border-color: #ff0000; /* Cambia el color del borde */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    cursor: pointer; /* Cambia el cursor a una mano */
 }

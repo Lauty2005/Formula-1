@@ -70,7 +70,7 @@ main .nextRace .title {
   color: white;
 }
 main .nextRace .title #bandera {
-  width: 10%;
+  width: 5%;
   border-radius: 0.5rem;
 }
 main .nextRace .title h4 {
@@ -101,7 +101,7 @@ main .nextRace .tiempo {
   text-align: center;
   background-color: #f0f0f0;
 }
-main section .information {
+main .container .information {
   display: flex;
   /* Activa flexbox */
   flex-direction: column;
@@ -115,17 +115,17 @@ main section .information {
   margin: 0 auto;
   /* Centra el contenedor dentro de su padre */
 }
-main section .information h1 {
+main .container .information h1 {
   font-weight: bold;
   border-top: 0.75rem solid black;
   border-right: 0.75rem solid black;
   border-top-right-radius: 1rem;
   width: 100%;
 }
-main section .teams {
+main .container .teams {
   display: flex;
 }
-main section .teams .div1 {
+main .container .teams .div1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,22 +136,22 @@ main section .teams .div1 {
   border-bottom-right-radius: 1rem;
   border-top-right-radius: 1rem;
 }
-main section .teams .div1 .titleTeams {
+main .container .teams .div1 .titleTeams {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
-main section .teams .div1 .titleTeams h3 {
+main .container .teams .div1 .titleTeams h3 {
   margin: 0 !important;
   padding-left: 1rem;
 }
-main section .teams .div1 .pilotsContainer {
+main .container .teams .div1 .pilotsContainer {
   display: flex;
   flex-direction: column;
   width: 95%;
 }
-main section .teams .div1 .pilotsContainer .pilots {
+main .container .teams .div1 .pilotsContainer .pilots {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -161,16 +161,16 @@ main section .teams .div1 .pilotsContainer .pilots {
   border-right: 1px solid rgb(185, 185, 188);
   border-bottom-right-radius: 1em;
 }
-main section .teams .div1 .pilotsContainer .pilots .nameContainer #name {
+main .container .teams .div1 .pilotsContainer .pilots .nameContainer #name {
   margin: 0;
   font-size: 1.25rem;
 }
-main section .teams .div1 .pilotsContainer .pilots .nameContainer #lastName {
+main .container .teams .div1 .pilotsContainer .pilots .nameContainer #lastName {
   margin: 0;
   font-size: 2rem;
   font-weight: 600;
 }
-main section .teams .div1 .custom-line {
+main .container .teams .div1 .custom-line {
   border: none;
   /* Elimina el estilo predeterminado de <hr> */
   border-top: 1px solid rgb(185, 185, 188);
@@ -184,39 +184,45 @@ main section .teams .div1 .custom-line {
   width: 90%;
   /* Ajusta al contenedor */
 }
-main section .teams .div1 .mclaren {
+main .container .teams .div1 .mclaren {
   border-left: 0.75rem solid rgb(255, 128, 0) !important;
 }
-main section .teams .div1 .ferrari {
+main .container .teams .div1 .ferrari {
   border-left: 0.75rem solid rgb(232, 0, 32) !important;
 }
-main section .teams .div1 .redbull {
+main .container .teams .div1 .redbull {
   border-left: 0.75rem solid rgb(54, 113, 198) !important;
 }
-main section .teams .div1 .mercedes {
+main .container .teams .div1 .mercedes {
   border-left: 0.75rem solid rgb(39, 244, 210) !important;
 }
-main section .teams .div1 .astonmartin {
+main .container .teams .div1 .astonmartin {
   border-left: 0.75rem solid rgb(34, 153, 113) !important;
 }
-main section .teams .div1 .alpine {
+main .container .teams .div1 .alpine {
   border-left: 0.75rem solid rgb(0, 147, 204) !important;
 }
-main section .teams .div1 .haas {
+main .container .teams .div1 .haas {
   border-left: 0.75rem solid rgb(182, 186, 189) !important;
 }
-main section .teams .div1 .rb {
+main .container .teams .div1 .rb {
   border-left: 0.75rem solid rgb(102, 146, 255) !important;
 }
-main section .teams .div1 .williams {
+main .container .teams .div1 .williams {
   border-left: 0.75rem solid rgb(100, 196, 255) !important;
 }
-main section .teams .div1 .kicksauber {
+main .container .teams .div1 .kicksauber {
   border-left: 0.75rem solid rgb(0, 0, 0) !important;
 }
-main section #teamsLogo {
+main .container #teamsLogo {
   height: 4em;
   padding: 1rem 1rem;
+}
+
+.race .teams .div2:hover {
+  border-color: #ff0000; /* Cambia el color del borde */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  cursor: pointer; /* Cambia el cursor a una mano */
 }
 
 footer {
@@ -231,6 +237,10 @@ footer {
     text-align: center;
     display: none;
     /* Hide nav list initially */
+  }
+  .nextRace .title #bandera {
+    width: 10%;
+    border-radius: 0.5rem;
   }
   .nextRace .contenedor {
     flex-direction: column;
@@ -412,11 +422,175 @@ footer {
     display: none;
     /* Hide nav list initially */
   }
+  main .nextRace .title #bandera {
+    width: 7%;
+    border-radius: 0.5rem;
+  }
+  main .race .teams {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .race .teams .div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin: 1rem;
+    border: 0.25rem solid black;
+    border-radius: 1rem;
+  }
+  main .race .teams .div2 .titleRace {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+  }
+  main .race .teams .div2 .titleRace .date h3 {
+    margin: 0;
+    font-weight: bold;
+  }
+  main .race .teams .div2 .titleRace .date #dates {
+    font-size: 28px;
+  }
+  main .race .teams .div2 .titleRace .date #month {
+    color: white;
+    background-color: black;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 18px;
+  }
+  main .race .teams .div2 .titleRace .date #month-spain {
+    color: white;
+    background-color: black;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 14px;
+    padding: 0.25rem;
+  }
+  main .race .teams .div2 .titleRace #flag {
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+  }
+  main .race .teams .div2 .custom-line {
+    border: none;
+    /* Elimina el estilo predeterminado de <hr> */
+    border-top: 1px solid rgb(185, 185, 188);
+    /* Línea superior gris clara */
+    height: 1px;
+    /* Grosor de la línea */
+    background-color: transparent;
+    /* Fondo transparente */
+    margin: 1rem 0;
+    /* Espaciado superior e inferior */
+    width: 90%;
+    /* Ajusta al contenedor */
+  }
+  main .race .teams .div2 .raceContainer {
+    width: 90%;
+    height: 50%;
+  }
+  main .race .teams .div2 .raceContainer h3 {
+    font-weight: bold;
+  }
+  main .race .teams .div2 #circuit {
+    width: 50%;
+  }
 }
 @media (min-width: 769px) {
   #menuToggle {
     display: none;
     /* Hide menu toggle on desktops */
+  }
+  .nextRace {
+    padding-top: 1rem;
+  }
+  main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  main .container .teams {
+    width: 90%;
+  }
+  main .container .teams .div1 .pilotsContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  main .race .teams {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .race .teams .div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin: 1rem;
+    border: 0.25rem solid black;
+    border-radius: 1rem;
+  }
+  main .race .teams .div2 .titleRace {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+  }
+  main .race .teams .div2 .titleRace .date h3 {
+    margin: 0;
+    font-weight: bold;
+  }
+  main .race .teams .div2 .titleRace .date #dates {
+    font-size: 28px;
+  }
+  main .race .teams .div2 .titleRace .date #month {
+    color: white;
+    background-color: black;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 18px;
+  }
+  main .race .teams .div2 .titleRace .date #month-spain {
+    color: white;
+    background-color: black;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 14px;
+    padding: 0.25rem;
+  }
+  main .race .teams .div2 .titleRace #flag {
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+  }
+  main .race .teams .div2 .custom-line {
+    border: none;
+    /* Elimina el estilo predeterminado de <hr> */
+    border-top: 1px solid rgb(185, 185, 188);
+    /* Línea superior gris clara */
+    height: 1px;
+    /* Grosor de la línea */
+    background-color: transparent;
+    /* Fondo transparente */
+    margin: 1rem 0;
+    /* Espaciado superior e inferior */
+    width: 90%;
+    /* Ajusta al contenedor */
+  }
+  main .race .teams .div2 .raceContainer {
+    width: 90%;
+    height: 50%;
+  }
+  main .race .teams .div2 .raceContainer h3 {
+    font-weight: bold;
+  }
+  main .race .teams .div2 #circuit {
+    width: 50%;
   }
 }
 
