@@ -152,46 +152,6 @@ main {
                     width: 90%;
                     /* Ajusta al contenedor */
                 }
-
-                .mclaren {
-                    border-left: 0.75rem solid rgb(255, 128, 0) !important;
-                }
-
-                .ferrari {
-                    border-left: 0.75rem solid rgb(232, 0, 32) !important;
-                }
-
-                .redbull {
-                    border-left: 0.75rem solid rgb(54, 113, 198) !important;
-                }
-
-                .mercedes {
-                    border-left: 0.75rem solid rgb(39, 244, 210) !important;
-                }
-
-                .astonmartin {
-                    border-left: 0.75rem solid rgb(34, 153, 113) !important;
-                }
-
-                .alpine {
-                    border-left: 0.75rem solid rgb(0, 147, 204) !important;
-                }
-
-                .haas {
-                    border-left: 0.75rem solid rgb(182, 186, 189) !important;
-                }
-
-                .rb {
-                    border-left: 0.75rem solid rgb(102, 146, 255) !important;
-                }
-
-                .williams {
-                    border-left: 0.75rem solid rgb(100, 196, 255) !important;
-                }
-
-                .kicksauber {
-                    border-left: 0.75rem solid rgb(0, 0, 0) !important;
-                }
             }
         }
 
@@ -248,28 +208,14 @@ main {
                     }
                 }
 
-                .custom-line {
-                    border: none;
-                    /* Elimina el estilo predeterminado de <hr> */
-                    border-top: 1px solid rgb(185 185 188);
-                    /* Línea superior gris clara */
-                    height: 1px;
-                    /* Grosor de la línea */
-                    background-color: transparent;
-                    /* Fondo transparente */
-                    margin: 1rem 0;
-                    /* Espaciado superior e inferior */
-                    width: 90%;
-                    /* Ajusta al contenedor */
-                }
-
                 a {
                     text-decoration: none;
                     color: black;
-                    
+
                     .raceContainer {
                         width: 90%;
-    
+                        margin: 1rem;
+
                         h3 {
                             font-weight: bold;
                         }
@@ -278,6 +224,265 @@ main {
 
                 #circuit {
                     width: 50%;
+                }
+            }
+        }
+    }
+
+    .raceWeekend {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .stages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .p1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem;
+                margin: 1rem;
+                width: 45%;
+
+                border: 1px solid black;
+                border-radius: 1rem;
+
+                .date {
+                    width: 40%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    #dates {
+                        font-size: 28px;
+                    }
+
+                    #month {
+                        color: white;
+                        background-color: black;
+                        border-radius: 1rem;
+                        text-align: center;
+                        font-size: 16px;
+                        padding: 0.25rem;
+                    }
+                }
+
+                .stage {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    h3 {
+                        font-weight: bold;
+                    }
+
+                    #time {
+                        padding-top: 1rem;
+                    }
+                }
+
+                .bestTime {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    h3 {
+                        font-weight: bold;
+                    }
+
+                    .pilot {
+                        display: flex;
+
+                        h4 {
+                            padding: 0 0.25rem 0 0.25rem;
+                        }
+
+                        #number {
+                            font-weight: bold;
+                        }
+
+                        #surname {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+
+        .raceInformation {
+            .pista {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .title {
+                    margin: 1rem 0 2rem 0;
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    h2 {
+                        margin: 0;
+                    }
+
+                    #flag {
+                        width: 10%;
+                        border-radius: 0.5rem;
+                        border: 1px solid black;
+                    }
+                }
+                
+                .contenedor {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .conteiner {
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-rows: repeat(2, 1fr);
+                        justify-items: center;
+    
+                        .info {
+                            width: 95%;
+                            margin: 0 0 1rem 0;
+                            padding: 0 0 0 1rem;
+                            display: flex;
+                            flex-direction: column;
+    
+                            border: 2px solid lightgrey;
+                            border-radius: 1rem;
+    
+                            .distance {
+                                width: 100%;
+                                margin: 0.25rem 0 1rem 0;
+                                display: flex;
+    
+                                #info {
+                                    margin: 0;
+                                }
+    
+                                #unit {
+                                    padding-left: 1rem;
+                                    font-size: 1.5rem;
+                                }
+                            }
+    
+                            #title {
+                                margin: 1rem 0 0 0;
+                                font-size: 1.5rem;
+                            }
+    
+                            #info {
+                                margin: 0.25rem 0 1rem 0;
+                                font-size: 3rem;
+                                font-weight: bold;
+                            }
+                        }
+    
+                        .div1 {
+                            grid-row-start: 2;
+                        }
+    
+                        .div2 {
+                            grid-row-start: 2;
+                        }
+    
+                        .div3 {
+                            grid-column: span 2 / span 1;
+                            width: auto;
+                            padding-right: 1rem;
+                        }
+                    }
+    
+                    #circuito {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+
+        .race2024 {
+            margin: 0 1rem 0 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .parent {
+                margin: 2rem 0 2rem 0;
+                width: 90%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+                gap: 8px;
+
+                .position {
+                    padding: 0 .5rem 0 .5rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    border: 1px solid black;
+                    border-top-right-radius: 1rem;
+                    border-bottom-right-radius: 1rem;
+
+                    #position {
+                        width: 10%;
+                    }
+
+                    h4 {
+                        width: 75%;
+                        padding-left: .5rem;
+                    }
+
+                    img {
+                        width: 15%;
+                    }
+                }
+            }
+
+            .divConteiner {
+                display: flex;
+                flex-direction: column;
+
+                .div3 {
+                    margin: 0 0 1rem 0;
+                    padding: 0 1rem 0 1rem;
+                    display: flex;
+                    flex-direction: column;
+        
+                    border: 2px solid lightgrey;
+                    border-radius: 1rem;
+        
+                    .distance {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+        
+                        #info {
+                            margin: 0.25rem .5rem 1rem 0;
+                            font-size: 3rem;
+                            font-weight: bold;
+                        }
+        
+                        #unit {
+                            margin: 0 0 0 .5rem;
+                            font-size: 1.5rem;
+                        }
+                    }
+        
+                    #title {
+                        margin: 1rem 0 0 0;
+                        font-size: 1.5rem;
+                    }
                 }
             }
         }
@@ -296,10 +501,83 @@ main {
 .race .teams .div2 .raceContainer:hover {
     color: grey;
     /* Cambia el color del borde */
-    transform: translateY(-5px); 
+    transform: translateY(-5px);
     /* Mueve el título hacia arriba */
     cursor: pointer;
     /* Cambia el cursor a una mano */
-    transition: transform 0.3s ease, color 0.3s ease; 
+    transition: transform 0.3s ease, color 0.3s ease;
     /* Transición suave */
+}
+
+main .raceWeekend .raceInformation .pista .conteiner .info:hover {
+    border-color: #ff0000;
+    /* Cambia el color del borde */
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño */
+    cursor: pointer;
+    /* Cambia el cursor a una mano */
+}
+
+main .raceWeekend .raceInformation .pista .div3:hover {
+    border-color: #ff0000;
+    /* Cambia el color del borde */
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño */
+    cursor: pointer;
+    /* Cambia el cursor a una mano */
+}
+
+.mclaren {
+    border-left: 0.75rem solid rgb(255, 128, 0) !important;
+}
+
+.ferrari {
+    border-left: 0.75rem solid rgb(232, 0, 32) !important;
+}
+
+.redbull {
+    border-left: 0.75rem solid rgb(54, 113, 198) !important;
+}
+
+.mercedes {
+    border-left: 0.75rem solid rgb(39, 244, 210) !important;
+}
+
+.astonmartin {
+    border-left: 0.75rem solid rgb(34, 153, 113) !important;
+}
+
+.alpine {
+    border-left: 0.75rem solid rgb(0, 147, 204) !important;
+}
+
+.haas {
+    border-left: 0.75rem solid rgb(182, 186, 189) !important;
+}
+
+.rb {
+    border-left: 0.75rem solid rgb(102, 146, 255) !important;
+}
+
+.williams {
+    border-left: 0.75rem solid rgb(100, 196, 255) !important;
+}
+
+.kicksauber {
+    border-left: 0.75rem solid rgb(0, 0, 0) !important;
+}
+
+.custom-line {
+    border: none;
+    /* Elimina el estilo predeterminado de <hr> */
+    border-top: 1px solid rgb(185 185 188);
+    /* Línea superior gris clara */
+    height: 1px;
+    /* Grosor de la línea */
+    background-color: transparent;
+    /* Fondo transparente */
+    margin: 1rem 0;
+    /* Espaciado superior e inferior */
+    width: 90%;
+    /* Ajusta al contenedor */
 }

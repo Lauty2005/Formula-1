@@ -248,6 +248,9 @@
 
           .raceContainer {
             height: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
 
             h3 {
               font-weight: bold;
@@ -257,6 +260,43 @@
           #circuit {
             width: 50%;
           }
+        }
+      }
+    }
+  }
+
+  .raceWeekend {
+    .stages {
+      .p1 {
+        width: 30% !important;
+      }
+    }
+
+    .raceInformation {
+      .pista {
+        .contenedor {
+          flex-direction: row !important;
+
+          #circuito {
+            width: 50% !important;
+          }
+        }
+      }
+    }
+
+    .race2024 {
+      .parent {
+        width: 60% !important;
+      }
+
+      .divConteiner {
+        width: 90%;
+        flex-direction: row !important;
+        justify-content: center;
+
+        .div3 {
+          width: 25%;
+          margin: 0 .5rem 0 .5rem !important;
         }
       }
     }
