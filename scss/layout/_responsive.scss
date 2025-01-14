@@ -269,6 +269,12 @@
     .stages {
       .p1 {
         width: 30% !important;
+
+        .bestTime {
+          .pilot {
+            flex-direction: row !important;
+          }
+        }
       }
     }
 
@@ -285,6 +291,11 @@
     }
 
     .race2024 {
+
+      p {
+        width: 80%;
+      }
+
       .parent {
         width: 60% !important;
       }
@@ -295,8 +306,8 @@
         justify-content: center;
 
         .div3 {
-          width: 25%;
-          margin: 0 .5rem 0 .5rem !important;
+          width: 30%;
+          margin: 0 1rem 0 1rem !important;
         }
       }
     }

@@ -1,6 +1,9 @@
 @charset "UTF-8";
 body {
-  font-family: sans-serif;
+  font-family: "Noto Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
   margin: 0;
   padding: 0;
 }
@@ -275,15 +278,17 @@ main .raceWeekend .stages .p1 .date {
   align-items: center;
 }
 main .raceWeekend .stages .p1 .date #dates {
-  font-size: 28px;
+  margin: 0 0.25rem 0 0;
+  font-size: 2.5rem;
 }
 main .raceWeekend .stages .p1 .date #month {
   color: white;
   background-color: black;
   border-radius: 1rem;
   text-align: center;
-  font-size: 16px;
+  font-size: 1.5rem;
   padding: 0.25rem;
+  margin: 0 0 0 0.25rem;
 }
 main .raceWeekend .stages .p1 .stage {
   display: flex;
@@ -343,7 +348,7 @@ main .raceWeekend .raceInformation .pista .title h2 {
   text-align: center;
 }
 main .raceWeekend .raceInformation .pista .title #flag {
-  width: 10%;
+  width: 7%;
   border-radius: 0.5rem;
   border: 1px solid black;
 }
@@ -440,6 +445,7 @@ main .raceWeekend .race2024 .parent .position img {
 main .raceWeekend .race2024 .divConteiner {
   display: flex;
   flex-direction: column;
+  margin: 0 0 1rem 0;
 }
 main .raceWeekend .race2024 .divConteiner .div3 {
   margin: 0 0 1rem 0;
@@ -473,6 +479,7 @@ main .raceWeekend .race2024 h2 {
 main .raceWeekend h3 {
   text-align: center;
   font-size: 2rem;
+  margin: 1rem 0 1rem 0;
 }
 
 .race .teams .div2:hover {
@@ -504,7 +511,16 @@ main .raceWeekend .raceInformation .pista .conteiner .info:hover {
   /* Cambia el cursor a una mano */
 }
 
-main .raceWeekend .raceInformation .pista .div3:hover {
+.div3:hover {
+  border-color: #ff0000 !important;
+  /* Cambia el color del borde */
+  transform: scale(1.05);
+  /* Aumenta ligeramente el tamaño */
+  cursor: pointer;
+  /* Cambia el cursor a una mano */
+}
+
+main .raceWeekend .stages .p1:hover {
   border-color: #ff0000;
   /* Cambia el color del borde */
   transform: scale(1.05);
@@ -772,11 +788,17 @@ footer {
   .raceWeekend .stages .p1 {
     width: 30% !important;
   }
+  .raceWeekend .stages .p1 .bestTime .pilot {
+    flex-direction: row !important;
+  }
   .raceWeekend .raceInformation .pista .contenedor {
     flex-direction: row !important;
   }
   .raceWeekend .raceInformation .pista .contenedor #circuito {
     width: 50% !important;
+  }
+  .raceWeekend .race2024 p {
+    width: 80%;
   }
   .raceWeekend .race2024 .parent {
     width: 60% !important;
@@ -787,8 +809,8 @@ footer {
     justify-content: center;
   }
   .raceWeekend .race2024 .divConteiner .div3 {
-    width: 25%;
-    margin: 0 0.5rem 0 0.5rem !important;
+    width: 30%;
+    margin: 0 1rem 0 1rem !important;
   }
 }
 

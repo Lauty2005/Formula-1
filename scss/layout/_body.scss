@@ -1,5 +1,11 @@
 body {
-  font-family: sans-serif;
+  // <uniquifier>: Use a unique and descriptive class name
+  // <weight>: Use a value from 200 to 800
+  font-family: "Noto Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+
   margin: 0;
   padding: 0;
 }
