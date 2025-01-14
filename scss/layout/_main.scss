@@ -245,13 +245,12 @@ main {
                 align-items: center;
                 padding: 1rem;
                 margin: 1rem;
-                width: 45%;
+                width: 40%;
 
                 border: 1px solid black;
                 border-radius: 1rem;
 
                 .date {
-                    width: 40%;
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
@@ -297,16 +296,25 @@ main {
 
                     .pilot {
                         display: flex;
+                        flex-direction: column;
+                        align-items: center;
 
                         h4 {
                             padding: 0 0.25rem 0 0.25rem;
                         }
 
                         #number {
+                            margin: .5rem 0 0 0;
                             font-weight: bold;
                         }
 
+                        #name {
+                            margin: .5rem 0 0 0;
+                            font-size: 1.5rem;
+                        }
+
                         #surname {
+                            margin: .5rem 0 .5rem 0;
                             font-weight: bold;
                         }
                     }
@@ -329,6 +337,7 @@ main {
 
                     h2 {
                         margin: 0;
+                        text-align: center;
                     }
 
                     #flag {
@@ -425,7 +434,7 @@ main {
                 gap: 8px;
 
                 .position {
-                    padding: 0 .5rem 0 .5rem;
+                    padding: 0 .25rem 0 .15rem;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -438,9 +447,9 @@ main {
                         width: 10%;
                     }
 
-                    h4 {
+                    #name {
                         width: 75%;
-                        padding-left: .5rem;
+                        padding-left: .75rem;
                     }
 
                     img {
@@ -485,6 +494,15 @@ main {
                     }
                 }
             }
+
+            h2 {
+                text-align: center;
+            }
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 2rem;
         }
     }
 }
