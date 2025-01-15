@@ -235,6 +235,7 @@ main {
         align-items: center;
 
         .stages {
+            width: 90%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -372,6 +373,7 @@ main {
                             padding: 0 0 0 1rem;
                             display: flex;
                             flex-direction: column;
+                            align-items: start;
 
                             border: 2px solid lightgrey;
                             border-radius: 1rem;
@@ -477,6 +479,7 @@ main {
                     padding: 0 1rem 0 1rem;
                     display: flex;
                     flex-direction: column;
+                    align-items: flex-start;
 
                     border: 2px solid lightgrey;
                     border-radius: 1rem;
