@@ -328,8 +328,11 @@ main .raceWeekend .stages .p1 .bestTime .pilot #name {
   font-size: 1.5rem;
 }
 main .raceWeekend .stages .p1 .bestTime .pilot #surname {
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 0.5rem 0 0 0;
   font-weight: bold;
+}
+main .raceWeekend .stages .p1 .bestTime p {
+  margin: 0.5rem 0 0.5rem 0;
 }
 main .raceWeekend .raceInformation .pista {
   display: flex;
@@ -418,10 +421,9 @@ main .raceWeekend .race2024 {
 main .raceWeekend .race2024 .parent {
   margin: 2rem 0 2rem 0;
   width: 90%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 main .raceWeekend .race2024 .parent .position {
   padding: 0 0.25rem 0 0.15rem;
@@ -436,16 +438,19 @@ main .raceWeekend .race2024 .parent .position #position {
   width: 10%;
 }
 main .raceWeekend .race2024 .parent .position #name {
-  width: 75%;
+  width: 50%;
   padding-left: 0.75rem;
 }
+main .raceWeekend .race2024 .parent .position #points {
+  width: 20%;
+}
 main .raceWeekend .race2024 .parent .position img {
-  width: 15%;
+  width: 20%;
 }
 main .raceWeekend .race2024 .divConteiner {
   display: flex;
   flex-direction: column;
-  margin: 0 0 1rem 0;
+  margin: 1rem 0 1rem 0;
 }
 main .raceWeekend .race2024 .divConteiner .div3 {
   margin: 0 0 1rem 0;
@@ -473,8 +478,41 @@ main .raceWeekend .race2024 .divConteiner .div3 #title {
   margin: 1rem 0 0 0;
   font-size: 1.5rem;
 }
+main .raceWeekend .race2024 .container2 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 90%;
+  margin: 1rem 0;
+  padding: 0;
+}
+main .raceWeekend .race2024 .container2 .podium__item .podium__city {
+  text-align: center;
+  padding: 0 0.5rem;
+}
+main .raceWeekend .race2024 .container2 .podium__item .podium__rank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #fff;
+}
+main .raceWeekend .race2024 .container2 .podium__item p {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+main .raceWeekend .race2024 .container2 .podium__item #logo {
+  width: 50%;
+}
 main .raceWeekend .race2024 h2 {
   text-align: center;
+}
+main .raceWeekend .race2024 h5 {
+  margin: 2rem 0 0 0;
+  width: 90%;
+  text-align: start;
+  font-size: 2rem;
+  font-weight: bold;
 }
 main .raceWeekend h3 {
   text-align: center;
@@ -527,6 +565,30 @@ main .raceWeekend .stages .p1:hover {
   /* Aumenta ligeramente el tamaño */
   cursor: pointer;
   /* Cambia el cursor a una mano */
+}
+
+.podium .first {
+  min-height: 15rem;
+  background: #858585;
+  margin: 0 0.5rem 0 0.5rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.podium .second {
+  min-height: 10rem;
+  background: #8d8d8d;
+  margin: 0 0.5rem 0 0.5rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.podium .third {
+  min-height: 5rem;
+  background: #a0a0a0;
+  margin: 0 0.5rem 0 0.5rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .mclaren {
@@ -665,52 +727,8 @@ footer {
     font-size: 2rem;
     font-weight: 600;
   }
-  .teams .div1 .custom-line {
-    border: none;
-    /* Elimina el estilo predeterminado de <hr> */
-    border-top: 1px solid rgb(185, 185, 188);
-    /* Línea superior gris clara */
-    height: 1px;
-    /* Grosor de la línea */
-    background-color: transparent;
-    /* Fondo transparente */
-    margin: 1rem 0;
-    /* Espaciado superior e inferior */
-    width: 90%;
-    /* Ajusta al contenedor */
-  }
   .teams .div1 #monoplaza {
     width: 90%;
-  }
-  .teams .div1 .mclaren {
-    border-left: 0.75rem solid rgb(255, 128, 0) !important;
-  }
-  .teams .div1 .ferrari {
-    border-left: 0.75rem solid rgb(232, 0, 32) !important;
-  }
-  .teams .div1 .redbull {
-    border-left: 0.75rem solid rgb(54, 113, 198) !important;
-  }
-  .teams .div1 .mercedes {
-    border-left: 0.75rem solid rgb(39, 244, 210) !important;
-  }
-  .teams .div1 .astonmartin {
-    border-left: 0.75rem solid rgb(34, 153, 113) !important;
-  }
-  .teams .div1 .alpine {
-    border-left: 0.75rem solid rgb(0, 147, 204) !important;
-  }
-  .teams .div1 .haas {
-    border-left: 0.75rem solid rgb(182, 186, 189) !important;
-  }
-  .teams .div1 .rb {
-    border-left: 0.75rem solid rgb(102, 146, 255) !important;
-  }
-  .teams .div1 .williams {
-    border-left: 0.75rem solid rgb(100, 196, 255) !important;
-  }
-  .teams .div1 .kicksauber {
-    border-left: 0.75rem solid rgb(0, 0, 0) !important;
   }
 }
 @media (min-width: 600px) and (max-width: 768px) {
@@ -739,6 +757,17 @@ footer {
   }
   main .race .teams .div2 .raceContainer h3 {
     font-weight: bold;
+  }
+  main .raceWeekend .race2024 .divConteiner {
+    flex-direction: row;
+  }
+  main .raceWeekend .race2024 .divConteiner .div3 {
+    margin: 0 1rem;
+  }
+  main .raceWeekend .race2024 .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
   }
 }
 @media (min-width: 769px) {
@@ -797,20 +826,41 @@ footer {
   .raceWeekend .raceInformation .pista .contenedor #circuito {
     width: 50% !important;
   }
-  .raceWeekend .race2024 p {
-    width: 80%;
+  .raceWeekend .race2024 {
+    width: 100%;
+  }
+  .raceWeekend .race2024 .container2 .podium__item {
+    width: 30%;
+  }
+  .raceWeekend .race2024 .container2 .podium__item .podium__city p {
+    font-size: 2.5rem;
+  }
+  .raceWeekend .race2024 .container2 .podium__item .podium__city #logo {
+    width: 25%;
   }
   .raceWeekend .race2024 .parent {
-    width: 60% !important;
+    width: 80% !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .raceWeekend .race2024 .parent .position img {
+    width: 10% !important;
   }
   .raceWeekend .race2024 .divConteiner {
-    width: 90%;
+    width: 100%;
     flex-direction: row !important;
     justify-content: center;
   }
   .raceWeekend .race2024 .divConteiner .div3 {
     width: 30%;
     margin: 0 1rem 0 1rem !important;
+  }
+  .raceWeekend .race2024 .divConteiner .div3 .distance {
+    width: 100%;
+  }
+  .raceWeekend .race2024 h5 {
+    width: 80% !important;
   }
 }
 

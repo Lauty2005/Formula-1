@@ -316,9 +316,13 @@ main {
                         }
 
                         #surname {
-                            margin: .5rem 0 .5rem 0;
+                            margin: .5rem 0 0 0;
                             font-weight: bold;
                         }
+                    }
+
+                    p {
+                        margin: .5rem 0 .5rem 0;
                     }
                 }
             }
@@ -348,7 +352,7 @@ main {
                         border: 1px solid black;
                     }
                 }
-                
+
                 .contenedor {
                     width: 90%;
                     display: flex;
@@ -361,59 +365,59 @@ main {
                         grid-template-columns: repeat(2, 1fr);
                         grid-template-rows: repeat(2, 1fr);
                         justify-items: center;
-    
+
                         .info {
                             width: 95%;
                             margin: 0 0 1rem 0;
                             padding: 0 0 0 1rem;
                             display: flex;
                             flex-direction: column;
-    
+
                             border: 2px solid lightgrey;
                             border-radius: 1rem;
-    
+
                             .distance {
                                 width: 100%;
                                 margin: 0.25rem 0 1rem 0;
                                 display: flex;
-    
+
                                 #info {
                                     margin: 0;
                                 }
-    
+
                                 #unit {
                                     padding-left: 1rem;
                                     font-size: 1.5rem;
                                 }
                             }
-    
+
                             #title {
                                 margin: 1rem 0 0 0;
                                 font-size: 1.5rem;
                             }
-    
+
                             #info {
                                 margin: 0.25rem 0 1rem 0;
                                 font-size: 3rem;
                                 font-weight: bold;
                             }
                         }
-    
+
                         .div1 {
                             grid-row-start: 2;
                         }
-    
+
                         .div2 {
                             grid-row-start: 2;
                         }
-    
+
                         .div3 {
                             grid-column: span 2 / span 1;
                             width: auto;
                             padding-right: 1rem;
                         }
                     }
-    
+
                     #circuito {
                         width: 90%;
                     }
@@ -430,10 +434,9 @@ main {
             .parent {
                 margin: 2rem 0 2rem 0;
                 width: 90%;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(5, 1fr);
-                gap: 8px;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
 
                 .position {
                     padding: 0 .25rem 0 .15rem;
@@ -450,12 +453,16 @@ main {
                     }
 
                     #name {
-                        width: 75%;
+                        width: 50%;
                         padding-left: .75rem;
                     }
 
+                    #points {
+                        width: 20%;
+                    }
+
                     img {
-                        width: 15%;
+                        width: 20%;
                     }
                 }
             }
@@ -463,34 +470,34 @@ main {
             .divConteiner {
                 display: flex;
                 flex-direction: column;
-                margin: 0 0 1rem 0;
+                margin: 1rem 0 1rem 0;
 
                 .div3 {
                     margin: 0 0 1rem 0;
                     padding: 0 1rem 0 1rem;
                     display: flex;
                     flex-direction: column;
-        
+
                     border: 2px solid lightgrey;
                     border-radius: 1rem;
-        
+
                     .distance {
                         width: 100%;
                         display: flex;
                         align-items: center;
-        
+
                         #info {
                             margin: 0.25rem .5rem 1rem 0;
                             font-size: 3rem;
                             font-weight: bold;
                         }
-        
+
                         #unit {
                             margin: 0 0 0 .5rem;
                             font-size: 1.5rem;
                         }
                     }
-        
+
                     #title {
                         margin: 1rem 0 0 0;
                         font-size: 1.5rem;
@@ -498,8 +505,49 @@ main {
                 }
             }
 
+            .container2 {
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                width: 90%;
+                margin: 1rem 0;
+                padding: 0;
+
+                .podium__item {
+                    .podium__city {
+                        text-align: center;
+                        padding: 0 .5rem;
+                    }
+
+                    .podium__rank {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 3rem;
+                        color: #fff;
+                    }
+
+                    p {
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                    }
+
+                    #logo {
+                        width: 50%;
+                    }
+                }
+            }
+
             h2 {
                 text-align: center;
+            }
+
+            h5 {
+                margin: 2rem 0 0 0;
+                width: 90%;
+                text-align: start;
+                font-size: 2rem;
+                font-weight: bold;
             }
         }
 
@@ -556,6 +604,30 @@ main .raceWeekend .stages .p1:hover {
     /* Aumenta ligeramente el tamaño */
     cursor: pointer;
     /* Cambia el cursor a una mano */
+}
+
+.podium .first {
+    min-height: 15rem;
+    background: #858585;
+    margin: 0 .5rem 0 .5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.podium .second {
+    min-height: 10rem;
+    background: #8d8d8d;
+    margin: 0 .5rem 0 .5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.podium .third {
+    min-height: 5rem;
+    background: #a0a0a0;
+    margin: 0 .5rem 0 .5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .mclaren {
