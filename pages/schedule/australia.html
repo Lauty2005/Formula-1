@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Australia</title>
+    <title>DRS Diaries | Australia</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -14,21 +14,24 @@
         href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../../img/Logo2.png">
 </head>
 
 <body>
     <header>
         <section>
-            <h1>Mi página web</h1>
-            <nav>
-                <button id="menuToggle">☰</button>
-                <ul id="navList">
-                    <li><a href="../../index.html">Inicio</a></li>
-                    <li><a href="../schedule.html">Schedule</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-
-            </nav>
+            <img src="../../img/Logo2.png" id="logoPage" alt="">
+            <div class="informacionNav">
+                <h1>DRS Diaries</h1>
+                <nav>
+                    <button id="menuToggle">☰</button>
+                    <ul id="navList">
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="../schedule.html">Schedule</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
         </section>
     </header>
     <main>
@@ -50,9 +53,9 @@
                     <div class="bestTime">
                         <h3>Best Time</h3>
                         <div class="pilot">
-                            <h4 id="number">1</h4>
-                            <h4 id="name">Max</h4>
-                            <h4 id="surname">Verstappen</h4>
+                            <h4 id="number">-</h4>
+                            <h4 id="name">-</h4>
+                            <h4 id="surname">-</h4>
                         </div>
                         <p>--:--:--</p>
 
@@ -190,31 +193,115 @@
             <hr class="custom-line">
             <section class="race2024">
                 <h2>2024 ROLEX AUSTRALIAN GRAND PRIX</h2>
-                <div class="container2 podium">
-                    <div class="podium__item">
-                        <div class="podium__city">
-                            <img src="../../img/Ferrari Logo.avif" id="logo" alt="">
-                            <p>Charles Leclerc</p>
+                <section class="stages">
+                    <div class="p1"> <!-- Practice 1 -->
+                        <div class="date">
+                            <h3 id="dates">21</h3>
+                            <h3 id="month">MAR</h3>
                         </div>
-                        <div class="podium__rank second">2</div>
+                        <hr class="custom-line">
+                        <div class="stage">
+                            <h3>Practice 1</h3>
+                            <p id="time">22.30h</p>
+                        </div>
+                        <hr class="custom-line">
+                        <div class="bestTime">
+                            <h3>Best Time</h3>
+                            <div class="pilot">
+                                <h4 id="number">4</h4>
+                                <h4 id="name">Lando</h4>
+                                <h4 id="surname">Norris</h4>
+                            </div>
+                            <p>1:18.564</p>
+    
+                        </div>
                     </div>
-                    <div class="podium__item">
-                        <div class="podium__city">
-                            <img src="../../img/Ferrari Logo.avif" id="logo" alt="">
-                            <p>Carlos Sainz Jr.</p>
+                    <div class="p1"> <!-- Practice 2 -->
+                        <div class="date">
+                            <h3 id="dates">22</h3>
+                            <h3 id="month">MAR</h3>
                         </div>
-                        <div class="podium__rank first">
-                            <div class="podium__rank first">1</div>
+                        <hr class="custom-line">
+                        <div class="stage">
+                            <h3>Practice 2</h3>
+                            <p id="time">02.00h</p>
+                        </div>
+                        <hr class="custom-line">
+                        <div class="bestTime">
+                            <h3>Best Time</h3>
+                            <div class="pilot">
+                                <h4 id="number">16</h4>
+                                <h4 id="name">Charles</h4>
+                                <h4 id="surname">Leclerc</h4>
+                            </div>
+                            <p>1:17.277</p>
                         </div>
                     </div>
-                    <div class="podium__item">
-                        <div class="podium__city">
-                            <img src="../../img/McLaren Logo.avif" id="logo" alt="">
-                            <p>Lando Norris</p>
+                    <div class="p1"> <!-- Practice 3 -->
+                        <div class="date">
+                            <h3 id="dates">22</h3>
+                            <h3 id="month">MAR</h3>
                         </div>
-                        <div class="podium__rank third">3</div>
+                        <hr class="custom-line">
+                        <div class="stage">
+                            <h3>Practice 3</h3>
+                            <p id="time">22.30h</p>
+                        </div>
+                        <hr class="custom-line">
+                        <div class="bestTime">
+                            <h3>Best Time</h3>
+                            <div class="pilot">
+                                <h4 id="number">16</h4>
+                                <h4 id="name">Charles</h4>
+                                <h4 id="surname">Leclerc</h4>
+                            </div>
+                            <p>1:16.714</p>
+    
+                        </div>
                     </div>
-                </div>
+                    <div class="p1"> <!-- Qualifiying -->
+                        <div class="date">
+                            <h3 id="dates">23</h3>
+                            <h3 id="month">MAR</h3>
+                        </div>
+                        <hr class="custom-line">
+                        <div class="stage">
+                            <h3>Qualifiying</h3>
+                            <p id="time">02.00h</p>
+                        </div>
+                        <hr class="custom-line">
+                        <div class="bestTime">
+                            <h3>Best Time</h3>
+                            <div class="pilot">
+                                <h4 id="number">1</h4>
+                                <h4 id="name">Max</h4>
+                                <h4 id="surname">Verstappen</h4>
+                            </div>
+                            <p>1:15.915</p>
+                        </div>
+                    </div>
+                    <div class="p1"> <!-- Race -->
+                        <div class="date">
+                            <h3 id="dates">24</h3>
+                            <h3 id="month">MAR</h3>
+                        </div>
+                        <hr class="custom-line">
+                        <div class="stage">
+                            <h3>Race</h3>
+                            <p id="time">01:00h</p>
+                        </div>
+                        <hr class="custom-line">
+                        <div class="bestTime">
+                            <h3>Best Time</h3>
+                            <div class="pilot">
+                                <h4 id="number">55</h4>
+                                <h4 id="name">Carlos</h4>
+                                <h4 id="surname">Sainz Jr.</h4>
+                            </div>
+                            <p>1:20:26.843</p>
+                        </div>
+                    </div>
+                </section>
                 <h5>Race Points</h5>
                 <div class="parent">
                     <div class="ferrari position">
@@ -299,7 +386,7 @@
         </article>
     </main>
     <footer>
-        <p>&copy; 2024 Mi nombre</p>
+        <p>&copy; 2024 Lautaro Iezzi</p>
     </footer>
     <script src="../../script.js"></script>
 </body>

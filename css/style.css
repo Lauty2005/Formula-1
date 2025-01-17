@@ -21,33 +21,45 @@ header {
 }
 header section {
   background-color: #ff1a1a;
-  padding: 20px;
+  padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header section h1 {
+header section #logoPage {
+  width: 6%;
+}
+header section .informacionNav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 3rem;
+}
+header section .informacionNav h1 {
   margin: 0;
   color: white;
+  font-weight: bold;
 }
-header section nav {
+header section .informacionNav nav {
   text-align: center;
   /* Center the links horizontally */
 }
-header section nav ul {
+header section .informacionNav nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-header section nav ul li {
+header section .informacionNav nav ul li {
   display: inline-block;
   margin-right: 20px;
 }
-header section nav ul li a {
+header section .informacionNav nav ul li a {
   text-decoration: none;
   color: white;
+  font-size: 1.5rem;
 }
-header section nav #menuToggle {
+header section .informacionNav nav #menuToggle {
   background-color: #ff1a1a;
   color: white;
   border: none;
@@ -55,7 +67,7 @@ header section nav #menuToggle {
   font-size: 24px;
   padding: 10px;
 }
-header section nav .show {
+header section .informacionNav nav .show {
   width: 100%;
   height: 7vh;
   position: fixed;
@@ -156,6 +168,7 @@ main .container .teams .div1 .titleTeams {
 main .container .teams .div1 .titleTeams h3 {
   margin: 0 !important;
   padding-left: 1rem;
+  font-weight: bold;
 }
 main .container .teams .div1 .pilotsContainer {
   display: flex;
@@ -198,6 +211,14 @@ main .container .teams .div1 .custom-line {
 main .container #teamsLogo {
   height: 4em;
   padding: 1rem 1rem;
+}
+main .information h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+main .information p {
+  text-align: center;
+  font-size: 2rem;
 }
 main .race .teams .div2 {
   display: flex;
@@ -257,11 +278,25 @@ main .raceWeekend {
   flex-direction: column;
   align-items: center;
 }
+main .raceWeekend h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0 1rem 0;
+}
 main .raceWeekend .stages {
-  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+main .raceWeekend .stages .sakhir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 1rem;
 }
 main .raceWeekend .stages .p1 {
   display: flex;
@@ -273,16 +308,16 @@ main .raceWeekend .stages .p1 {
   border: 1px solid black;
   border-radius: 1rem;
 }
-main .raceWeekend .stages .p1 .date {
+main .raceWeekend .stages .date {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-main .raceWeekend .stages .p1 .date #dates {
+main .raceWeekend .stages .date #dates {
   margin: 0 0.25rem 0 0;
   font-size: 2.5rem;
 }
-main .raceWeekend .stages .p1 .date #month {
+main .raceWeekend .stages .date #month {
   color: white;
   background-color: black;
   border-radius: 1rem;
@@ -291,48 +326,48 @@ main .raceWeekend .stages .p1 .date #month {
   padding: 0.25rem;
   margin: 0 0 0 0.25rem;
 }
-main .raceWeekend .stages .p1 .stage {
+main .raceWeekend .stages .stage {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-main .raceWeekend .stages .p1 .stage h3 {
+main .raceWeekend .stages .stage h3 {
   font-weight: bold;
 }
-main .raceWeekend .stages .p1 .stage #time {
+main .raceWeekend .stages .stage #time {
   padding-top: 1rem;
 }
-main .raceWeekend .stages .p1 .bestTime {
+main .raceWeekend .stages .bestTime {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-main .raceWeekend .stages .p1 .bestTime h3 {
+main .raceWeekend .stages .bestTime h3 {
   font-weight: bold;
 }
-main .raceWeekend .stages .p1 .bestTime .pilot {
+main .raceWeekend .stages .bestTime .pilot {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .raceWeekend .stages .p1 .bestTime .pilot h4 {
+main .raceWeekend .stages .bestTime .pilot h4 {
   padding: 0 0.25rem 0 0.25rem;
 }
-main .raceWeekend .stages .p1 .bestTime .pilot #number {
+main .raceWeekend .stages .bestTime .pilot #number {
   margin: 0.5rem 0 0 0;
   font-weight: bold;
 }
-main .raceWeekend .stages .p1 .bestTime .pilot #name {
+main .raceWeekend .stages .bestTime .pilot #name {
   margin: 0.5rem 0 0 0;
   font-size: 1.5rem;
 }
-main .raceWeekend .stages .p1 .bestTime .pilot #surname {
+main .raceWeekend .stages .bestTime .pilot #surname {
   margin: 0.5rem 0 0 0;
   font-weight: bold;
 }
-main .raceWeekend .stages .p1 .bestTime p {
+main .raceWeekend .stages .bestTime p {
   margin: 0.5rem 0 0.5rem 0;
 }
 main .raceWeekend .raceInformation .pista {
@@ -517,11 +552,6 @@ main .raceWeekend .race2024 h5 {
   font-size: 2rem;
   font-weight: bold;
 }
-main .raceWeekend h3 {
-  text-align: center;
-  font-size: 2rem;
-  margin: 1rem 0 1rem 0;
-}
 
 .race .teams .div2:hover {
   border-color: #ff0000;
@@ -562,6 +592,15 @@ main .raceWeekend .raceInformation .pista .conteiner .info:hover {
 }
 
 main .raceWeekend .stages .p1:hover {
+  border-color: #ff0000;
+  /* Cambia el color del borde */
+  transform: scale(1.05);
+  /* Aumenta ligeramente el tamaño */
+  cursor: pointer;
+  /* Cambia el cursor a una mano */
+}
+
+main .raceWeekend .stages .sakhir:hover {
   border-color: #ff0000;
   /* Cambia el color del borde */
   transform: scale(1.05);
@@ -632,6 +671,116 @@ main .raceWeekend .stages .p1:hover {
 
 .kicksauber {
   border-left: 0.75rem solid rgb(0, 0, 0) !important;
+}
+
+#mclarenTitle:hover {
+  color: rgb(255, 128, 0);
+  /* Cambia el color del borde */
+  transform: translateX(5px);
+  /* Mueve el título hacia arriba */
+  cursor: pointer;
+  /* Cambia el cursor a una mano */
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Transición suave */
+}
+
+#ferrariTitle:hover {
+  color: rgb(232, 0, 32);
+  /* Cambia el color del borde */
+  transform: translateX(5px);
+  /* Mueve el título hacia arriba */
+  cursor: pointer;
+  /* Cambia el cursor a una mano */
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Transición suave */
+}
+
+#redbullTitle:hover {
+  color: rgb(54, 113, 198);
+  /* Cambia el color del borde */
+  transform: translateX(5px);
+  /* Mueve el título hacia arriba */
+  cursor: pointer;
+  /* Cambia el cursor a una mano */
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Transición suave */
+}
+
+#mercedesTitle:hover {
+  color: rgb(39, 244, 210);
+  /* Cambia el color del borde */
+  transform: translateX(5px);
+  /* Mueve el título hacia arriba */
+  cursor: pointer;
+  /* Cambia el cursor a una mano */
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Transición suave */
+}
+
+#astonmartinTitle:hover {
+  color: rgb(34, 153, 113);
+  /* Cambia el color del borde */
+  transform: translateX(5px);
+  /* Mueve el título hacia arriba */
+  cursor: pointer;
+  /* Cambia el cursor a una mano */
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Transición suave */
+}
+
+#alpineTitle:hover {
+  color: rgb(0, 147, 204);
+  /* Cambia el color del borde */
+  transform: translateX(5px);
+  /* Mueve el título hacia arriba */
+  cursor: pointer;
+  /* Cambia el cursor a una mano */
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Transición suave */
+}
+
+#haasTitle:hover {
+  color: rgb(182, 186, 189);
+  /* Cambia el color del borde */
+  transform: translateX(5px);
+  /* Mueve el título hacia arriba */
+  cursor: pointer;
+  /* Cambia el cursor a una mano */
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Transición suave */
+}
+
+#rbTitle:hover {
+  color: rgb(102, 146, 255);
+  /* Cambia el color del borde */
+  transform: translateX(5px);
+  /* Mueve el título hacia arriba */
+  cursor: pointer;
+  /* Cambia el cursor a una mano */
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Transición suave */
+}
+
+#williamsTitle:hover {
+  color: rgb(100, 196, 255);
+  /* Cambia el color del borde */
+  transform: translateX(5px);
+  /* Mueve el título hacia arriba */
+  cursor: pointer;
+  /* Cambia el cursor a una mano */
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Transición suave */
+}
+
+#kicksauberTitle:hover {
+  color: rgb(0, 0, 0);
+  /* Cambia el color del borde */
+  transform: translateX(5px);
+  /* Mueve el título hacia arriba */
+  cursor: pointer;
+  /* Cambia el cursor a una mano */
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Transición suave */
 }
 
 .custom-line {
@@ -735,6 +884,9 @@ footer {
   }
 }
 @media (min-width: 600px) and (max-width: 768px) {
+  #logoPage {
+    width: 5% !important;
+  }
   nav ul {
     text-align: center;
     display: none;
@@ -774,6 +926,9 @@ footer {
   }
 }
 @media (min-width: 769px) {
+  #logoPage {
+    width: 3% !important;
+  }
   #menuToggle {
     display: none;
     /* Hide menu toggle on desktops */
@@ -817,10 +972,13 @@ footer {
   main .race .teams .div2 #circuit {
     width: 50%;
   }
+  .raceWeekend .stages .sakhir {
+    width: 40% !important;
+  }
   .raceWeekend .stages .p1 {
     width: 30% !important;
   }
-  .raceWeekend .stages .p1 .bestTime .pilot {
+  .raceWeekend .stages .bestTime .pilot {
     flex-direction: row !important;
   }
   .raceWeekend .raceInformation .pista .contenedor {

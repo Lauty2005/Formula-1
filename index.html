@@ -4,26 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formula 1</title>
+    <title>DRS Diaries</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/Logo2.png">
 </head>
 
 <body>
     <header>
         <section>
-            <h1>Mi página web</h1>
-            <nav>
-                <button id="menuToggle">☰</button>
-                <ul id="navList">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="./pages/schedule.html">Schedule</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-
-            </nav>
+            <img src="./img/Logo2.png" id="logoPage" alt="">
+            <div class="informacionNav">
+                <h1>DRS Diaries</h1>
+                <nav>
+                    <button id="menuToggle">☰</button>
+                    <ul id="navList">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="./pages/schedule.html">Schedule</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
         </section>
     </header>
     <main>
@@ -83,21 +86,21 @@
             </article>
 
             <div class="teams">
-                <div class="div1">
+                <div class="div1"> <!-- McLaren -->
                     <div class="titleTeams mclaren">
-                        <h3>McLaren</h3>
+                        <h3 id="mclarenTitle">McLaren</h3>
                         <img src="./img/McLaren Logo.avif" id="teamsLogo" alt="">
                     </div>
                     <hr class="custom-line">
                     <div class="pilotsContainer">
-                        <div class="pilots">
+                        <div class="pilots" id="mclarenTitle">
                             <h4>4</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Lando</h4>
                                 <h4 id="lastName">NORRIS</h4>
                             </div>
                         </div>
-                        <div class="pilots">
+                        <div class="pilots" id="mclarenTitle">
                             <h4>81</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Oscar</h4>
@@ -107,21 +110,21 @@
                     </div>
                     <img src="./img/McLaren.png" id="monoplaza" width="75%">
                 </div>
-                <div class="div1">
+                <div class="div1"> <!-- Ferrari -->
                     <div class="titleTeams ferrari">
-                        <h3>Ferrari</h3>
+                        <h3 id="ferrariTitle">Ferrari</h3>
                         <img src="./img/Ferrari Logo.avif" id="teamsLogo" alt="">
                     </div>
                     <hr class="custom-line">
                     <div class="pilotsContainer">
-                        <div class="pilots">
+                        <div class="pilots" id="ferrariTitle">
                             <h4>44</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Lewis</h4>
                                 <h4 id="lastName">HAMILTON</h4>
                             </div>
                         </div>
-                        <div class="pilots">
+                        <div class="pilots" id="ferrariTitle">
                             <h4>16</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Charles</h4>
@@ -133,21 +136,21 @@
                 </div>
             </div>
             <div class="teams">
-                <div class="div1">
+                <div class="div1"> <!-- Red Bull -->
                     <div class="titleTeams redbull">
-                        <h3>Red Bull</h3>
+                        <h3 id="redbullTitle">Red Bull</h3>
                         <img src="./img/Red Bull Logo.avif" id="teamsLogo" alt="">
                     </div>
                     <hr class="custom-line">
                     <div class="pilotsContainer">
-                        <div class="pilots">
+                        <div class="pilots" id="redbullTitle">
                             <h4>1</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Max</h4>
                                 <h4 id="lastName">VERSTAPPEN</h4>
                             </div>
                         </div>
-                        <div class="pilots">
+                        <div class="pilots" id="redbullTitle">
                             <h4>30</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Liam</h4>
@@ -157,21 +160,21 @@
                     </div>
                     <img src="./img/Red Bull.png" id="monoplaza" width="75%">
                 </div>
-                <div class="div1">
+                <div class="div1"> <!-- Mercedes -->
                     <div class="titleTeams mercedes">
-                        <h3>Mercedes</h3>
+                        <h3 id="mercedesTitle">Mercedes</h3>
                         <img src="./img/Mercedes Logo.avif" id="teamsLogo" alt="">
                     </div>
                     <hr class="custom-line">
                     <div class="pilotsContainer">
-                        <div class="pilots">
+                        <div class="pilots" id="mercedesTitle">
                             <h4>63</h4>
                             <div class="nameContainer">
                                 <h4 id="name">George</h4>
                                 <h4 id="lastName">RUSSELL</h4>
                             </div>
                         </div>
-                        <div class="pilots">
+                        <div class="pilots" id="mercedesTitle">
                             <h4>12</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Andrea Kimi</h4>
@@ -183,21 +186,21 @@
                 </div>
             </div>
             <div class="teams">
-                <div class="div1">
+                <div class="div1"> <!-- Aston Martin -->
                     <div class="titleTeams astonmartin">
-                        <h3>Aston Martin</h3>
+                        <h3 id="astonmartinTitle">Aston Martin</h3>
                         <img src="./img/Aston Martin Logo.avif" id="teamsLogo" alt="">
                     </div>
                     <hr class="custom-line">
                     <div class="pilotsContainer">
-                        <div class="pilots">
+                        <div class="pilots" id="astonmartinTitle">
                             <h4>14</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Fernando</h4>
                                 <h4 id="lastName">ALONSO</h4>
                             </div>
                         </div>
-                        <div class="pilots">
+                        <div class="pilots" id="astonmartinTitle">
                             <h4>18</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Lance</h4>
@@ -207,21 +210,21 @@
                     </div>
                     <img src="./img/Aston Martin.png" id="monoplaza" width="75%">
                 </div>
-                <div class="div1">
+                <div class="div1"> <!-- Alpine -->
                     <div class="titleTeams alpine">
-                        <h3>Alpine</h3>
+                        <h3 id="alpineTitle">Alpine</h3>
                         <img src="./img/Alpine Logo.avif" id="teamsLogo" alt="">
                     </div>
                     <hr class="custom-line">
                     <div class="pilotsContainer">
-                        <div class="pilots">
+                        <div class="pilots" id="alpineTitle">
                             <h4>10</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Pierre</h4>
                                 <h4 id="lastName">GASLY</h4>
                             </div>
                         </div>
-                        <div class="pilots">
+                        <div class="pilots" id="alpineTitle">
                             <h4>7</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Jack</h4>
@@ -233,21 +236,21 @@
                 </div>
             </div>
             <div class="teams">
-                <div class="div1">
+                <div class="div1"> <!-- Haas -->
                     <div class="titleTeams haas">
-                        <h3>Haas</h3>
+                        <h3 id="haasTitle">Haas</h3>
                         <img src="./img/Haas Logo.avif" id="teamsLogo" alt="">
                     </div>
                     <hr class="custom-line">
                     <div class="pilotsContainer">
-                        <div class="pilots">
+                        <div class="pilots" id="haasTitle">
                             <h4>31</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Esteban</h4>
                                 <h4 id="lastName">OCON</h4>
                             </div>
                         </div>
-                        <div class="pilots">
+                        <div class="pilots" id="haasTitle">
                             <h4>87</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Oliver</h4>
@@ -257,21 +260,21 @@
                     </div>
                     <img src="./img/Haas.png" id="monoplaza" width="75%">
                 </div>
-                <div class="div1">
+                <div class="div1"> <!-- RB -->
                     <div class="titleTeams rb">
-                        <h3>RB</h3>
+                        <h3 id="rbTitle">RB</h3>
                         <img src="./img/RB Logo.avif" id="teamsLogo" alt="">
                     </div>
                     <hr class="custom-line">
                     <div class="pilotsContainer">
-                        <div class="pilots">
+                        <div class="pilots" id="rbTitle">
                             <h4>22</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Yuki</h4>
                                 <h4 id="lastName">TSUNODA</h4>
                             </div>
                         </div>
-                        <div class="pilots">
+                        <div class="pilots" id="rbTitle">
                             <h4>6</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Isack</h4>
@@ -283,21 +286,21 @@
                 </div>
             </div>
             <div class="teams">
-                <div class="div1">
+                <div class="div1"> <!-- Williams -->
                     <div class="titleTeams williams">
-                        <h3>Williams</h3>
+                        <h3 id="williamsTitle">Williams</h3>
                         <img src="./img/Williams Logo.avif" id="teamsLogo" alt="">
                     </div>
                     <hr class="custom-line">
                     <div class="pilotsContainer">
-                        <div class="pilots">
+                        <div class="pilots" id="williamsTitle">
                             <h4>55</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Carlos</h4>
                                 <h4 id="lastName">SAINZ</h4>
                             </div>
                         </div>
-                        <div class="pilots">
+                        <div class="pilots" id="williamsTitle">
                             <h4>23</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Alex</h4>
@@ -307,21 +310,21 @@
                     </div>
                     <img src="./img/Williams.png" id="monoplaza" width="75%">
                 </div>
-                <div class="div1">
+                <div class="div1"> <!-- Kick Sauber -->
                     <div class="titleTeams kicksauber">
-                        <h3>Kick Sauber</h3>
+                        <h3 id="kicksauberTitle">Kick Sauber</h3>
                         <img src="./img/Kick Sauber Logo.avif" id="teamsLogo" alt="">
                     </div>
                     <hr class="custom-line">
                     <div class="pilotsContainer">
-                        <div class="pilots">
+                        <div class="pilots" id="kicksauberTitle">
                             <h4>27</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Nico</h4>
                                 <h4 id="lastName">HULKENBERG</h4>
                             </div>
                         </div>
-                        <div class="pilots">
+                        <div class="pilots" id="kicksauberTitle">
                             <h4>5</h4>
                             <div class="nameContainer">
                                 <h4 id="name">Gabriel</h4>

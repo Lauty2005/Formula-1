@@ -100,6 +100,11 @@
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
+
+  #logoPage {
+    width: 5% !important;
+  }
+
   nav ul {
     text-align: center;
     display: none;
@@ -163,6 +168,10 @@
 }
 
 @media (min-width: 769px) {
+  #logoPage {
+    width: 3% !important;
+  }
+
   #menuToggle {
     display: none;
     /* Hide menu toggle on desktops */
@@ -230,13 +239,17 @@
 
   .raceWeekend {
     .stages {
+      .sakhir {
+        width: 40% !important;
+      }
+
       .p1 {
         width: 30% !important;
+      }
 
-        .bestTime {
-          .pilot {
-            flex-direction: row !important;
-          }
+      .bestTime {
+        .pilot {
+          flex-direction: row !important;
         }
       }
     }
