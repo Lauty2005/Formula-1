@@ -6,6 +6,9 @@ body {
   font-optical-sizing: auto;
   margin: 0;
   padding: 0;
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
 }
 
 h3 {
@@ -564,14 +567,45 @@ main .contact-section .contact-info h2 {
 }
 main .contact-section .contact-info p {
   width: 80%;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 main .contact-section .contact-info p a {
   text-decoration: none;
   color: red;
 }
 main .images {
-  height: 25%;
+  font-family: "Noto Serif", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .images .card .row {
+  display: flex !important;
+  flex-direction: row;
+  width: 100%;
+}
+main .images .card .row .col-md-4 {
+  width: 100% !important;
+}
+main .images .card .row .col-md-4 img {
+  width: 100%;
+}
+main .images .card .row .col-md-8 {
+  width: 100% !important;
+}
+main .images .card .row .col-md-8 .card-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+main .images .card .row .col-md-8 .card-body .card-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+main .images .card .row .col-md-8 .card-body .card-text {
+  font-size: 1.5rem;
 }
 
 .race .teams .div2:hover {

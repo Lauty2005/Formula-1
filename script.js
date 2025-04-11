@@ -6,7 +6,7 @@ menuToggle.addEventListener('click', () => {
   navList.classList.toggle('show');
 });
 
-const fechaCarrera = new Date("2025-04-11T08:30:00");
+const fechaCarrera = new Date("2025-04-12T09:30:00");
 const diasElem = document.getElementById("dias");
 const horasElem = document.getElementById("horas");
 const minutosElem = document.getElementById("minutos");
