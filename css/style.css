@@ -80,6 +80,9 @@ header section .informacionNav nav .show {
   padding: 1rem;
 }
 
+main {
+  background-color: #333;
+}
 main .carousel-inner > .item > img,
 main .carousel-inner > .item > a > img {
   width: 75%;
@@ -168,7 +171,12 @@ main .container .teams .div1 .titleTeams {
   justify-content: space-between;
   width: 100%;
 }
-main .container .teams .div1 .titleTeams h3 {
+main .container .teams .div1 .titleTeams a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+main .container .teams .div1 .titleTeams a h3 {
   margin: 0 !important;
   padding-left: 1rem;
   font-weight: bold;
@@ -178,21 +186,25 @@ main .container .teams .div1 .pilotsContainer {
   flex-direction: column;
   width: 95%;
 }
-main .container .teams .div1 .pilotsContainer .pilots {
+main .container .teams .div1 .pilotsContainer a {
+  color: black;
+  text-decoration: none;
+  width: 100%;
+}
+main .container .teams .div1 .pilotsContainer a .pilots {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 1rem;
-  width: 100%;
   border-bottom: 1px solid rgb(185, 185, 188);
   border-right: 1px solid rgb(185, 185, 188);
   border-bottom-right-radius: 1em;
 }
-main .container .teams .div1 .pilotsContainer .pilots .nameContainer #name {
+main .container .teams .div1 .pilotsContainer a .pilots .nameContainer #name {
   margin: 0;
   font-size: 1.25rem;
 }
-main .container .teams .div1 .pilotsContainer .pilots .nameContainer #lastName {
+main .container .teams .div1 .pilotsContainer a .pilots .nameContainer #lastName {
   margin: 0;
   font-size: 2rem;
   font-weight: 600;
@@ -607,6 +619,43 @@ main .images .card .row .col-md-8 .card-body .card-title {
 main .images .card .row .col-md-8 .card-body .card-text {
   font-size: 1.5rem;
 }
+main .escuderiasBanner {
+  height: 90vh;
+  width: 100%;
+  background-image: url("../img/McLaren Banner.jpg"); /* Si usas una imagen de fondo para el hero */
+  background-color: #6a6a6a;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .escuderiasBanner .tituloBanner {
+  text-align: center;
+  max-width: 800px;
+  padding: 0 20px;
+}
+main .escuderiasBanner .tituloBanner h1 {
+  color: white;
+  font-size: 4em; /* Ajusta el tamaño según tu diseño */
+  margin-bottom: 0.2em; /* Reduce el espacio entre título y subtítulo */
+}
+main .escuderiasBanner .tituloBanner p {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 300; /* Hace que el texto se vea más delgado y limpio */
+  opacity: 0.9; /* Opcional: un ligero desvanecimiento */
+}
+main .informacionEscuderias {
+  margin: 0 10em 0 10em;
+}
+main .informacionEscuderias .origen h2 {
+  color: rgb(255, 128, 0);
+  margin-bottom: 0.5em;
+}
+main .informacionEscuderias .origen p {
+  color: white;
+}
 
 .race .teams .div2:hover {
   border-color: #ff0000;
@@ -828,7 +877,7 @@ main .raceWeekend .stages .sakhir:hover {
 }
 
 #kicksauberTitle:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(150, 150, 150);
   /* Cambia el color del borde */
   transform: translateX(5px);
   /* Mueve el título hacia arriba */
